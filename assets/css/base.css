@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --color-main: #232323;
+    --color-highlight: #F7D9C4;
+    --color-text: #777777;
+    --color-green: #13A05D;
+
+    --bg-1: #EFEFEF;
+    --bg-2: #1C2026;
+    --bg-3: #32363B;
+    --bg-4: #DEE8EB;
+
+    --font: "DM Sans", sans-serif;
+    
+}
+
+* {
+    font-family: var(--font);
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #fff;
+    margin-right: 15px;
+    border-radius: 8px;
+    /* border: 1px solid #fff; */
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.button-highlight {
+    background-color: var(--color-highlight);
+    color: var(--color-main);
+    transition: all 0.5s;
+    /* border: 1px solid var(--color-highlight); */
+}
+
+.button-highlight:hover {
+    background-color: #fff;
+}
+
+.button-outline-highlight {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #BBBBBB;
+}
+
+.button-outline-highlight:hover {
+    background-color: var(--color-highlight);
+    color: var(--color-main);
+    border: 1px solid var(--color-highlight);
+}
+
+.button-main {
+    background-color: var(--color-main);
+    color: #fff;
+    transition: all 0.5s;
+    /* border: 1px solid var(--color-highlight); */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
